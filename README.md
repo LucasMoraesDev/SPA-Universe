@@ -1,3 +1,5 @@
 # SPA-Universe
 
-[<img src="https://www.youtube.com/embed/xFbInyvVmMw" width="50%">]([https://www.youtube.com/watch?v=Hc79sDi3f0U](https://www.youtube.com/embed/xFbInyvVmMw) "Now in Android: 55") 
+[![Now in Android: 55]          // Title
+(https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg)] // Thumbnail
+(https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55")    // Video Link
