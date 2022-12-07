@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --neutral-color: white;
+  --base-text-color: #c4c4cc;
+  --hover-text-color: #02799d;
+  --heading-color: #e1e1e6;
+
+  --background-default: var(--background-home);
+  --background-home: url("images/mountains-universe-1.png");
+  --background-the-universe: url("images/mountains-universe02.png");
+  --background-exploration: url("images/mountains-universe-3.png");
+
+  --padding-x: clamp(1rem, 5vw, 7.2rem);
+  --gap: clamp(0rem, 5vw, 3.2rem);
+}
+
+body {
+  height: 100vh;
+  background-image: var(--background-default);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  height: 12.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 4rem var(--padding-x);
+  gap: var(--gap);
+  font-weight: 400;
+  font-size: 2.16667rem;
+  line-height: 2.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--base-text-color);
+}
+
+.clicked {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--neutral-color);
+}
+
+h1,
+p {
+  color: var(--heading-color);
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 3rem;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 125%;
+}
+
+.home button {
+  padding: 1.2rem 3.2rem;
+  height: 4.8rem;
+  background: transparent;
+
+  border: 2px solid var(--neutral-color);
+  border-radius: 5px;
+
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  text-transform: uppercase;
+  color: var(--neutral-color);
+
+  transition: all 0.2s;
+
+  cursor: pointer;
+}
+
+.home button:hover {
+  background: var(--neutral-color);
+  color: var(--hover-text-color);
+}
+
+.the-universe,
+.exploration {
+  margin: 6.3rem 10.2rem;
+  /* max-width: 200rem; */
+}
+
+.the-universe h1,
+.exploration h1 {
+  margin-bottom: 1.6rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 160%;
+}
+
+@media (max-width: 530px) {
+  img{
+    position:absolute;
+    top: 3.8rem;
+    right: calc(50% - 25px);
+    left: calc(50% - 25px);
+  }
+  nav {
+    font-size: 2rem;
+    /* flex-direction: column; */
+    gap: 1.1rem;
+    height: 25rem;
+    justify-content: center;
+  }
+
+  .clicked {
+    font-size: 2.0rem;
+  }
+
+  .home {
+    height: 10vh;
+  }
+
+  .home h1 {
+    font-size: 3.5rem;
+  }
+
+  .the-universe,
+  .exploration {
+    margin: 1rem 1.4rem 0;
+    text-align: justify;
+    margin-top: -9rem;
+  }
+
+  .the-universe h1,
+  .exploration h1 {
+    margin: 1.6rem;
+  }
+}
